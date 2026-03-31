@@ -1,0 +1,2 @@
+# No external Python dependencies required for the provided analysis.py
+# If you extend the analysis with richer parsing or CVE lookup, add packages here (e.g. requests)

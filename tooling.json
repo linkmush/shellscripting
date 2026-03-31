@@ -1,0 +1,19 @@
+{
+  "added_packages": [],
+  "required_system_tools": [
+    {"name": "bash", "minimum_version": "4.0", "purpose": "Köra collect_logs.sh på Unix/Linux"},
+    {"name": "tar", "purpose": "Arkivering av resultat från Bash-skript"},
+    {"name": "gzip", "purpose": "Komprimering"},
+    {"name": "python", "minimum_version": "3.8", "purpose": "Köra analysis.py"},
+    {"name": "powershell", "minimum_version": "5.1", "purpose": "Köra hardening_checks.ps1 på Windows"},
+    {"name": "wevtutil", "purpose": "Export av Windows Event Logs (används i PowerShell-skript)"},
+    {"name": "Compress-Archive (PowerShell)", "purpose": "Skapa ZIP-arkiv i PowerShell"},
+    {"name": "dpkg-query or rpm", "purpose": "Lista installerade paket på Linux (best-effort)"},
+    {"name": "dmesg", "purpose": "Insamling av kernel ring buffer"}
+  ],
+  "dev_tools": [
+    {"name": "git", "purpose": "Versionshantering; rekommenderas för kodgranskning och signering"},
+    {"name": "pandoc", "purpose": "Valfritt: konvertera report.md till PDF"}
+  ],
+  "notes": "Inga externa Python-paket krävs för current analysis.py. För integration med CVE-databaser rekommenderas 'requests' och 'python-dateutil'."
+}

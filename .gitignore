@@ -1,0 +1,5 @@
+# Ignore output directories and archives
+out/
+submission/out*/
+*.tar.gz
+*.zip

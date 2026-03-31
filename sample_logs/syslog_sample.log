@@ -1,0 +1,11 @@
+Mar 26 10:01:05 server1 sshd[12345]: Failed password for invalid user admin from 10.0.0.5 port 54822 ssh2
+Mar 26 10:01:10 server1 sshd[12346]: Failed password for invalid user root from 10.0.0.5 port 54823 ssh2
+Mar 26 10:02:12 server1 sshd[12347]: Accepted password for alice from 10.0.0.10 port 55211 ssh2
+Mar 26 10:05:03 server1 sudo: pam_unix(sudo:session): session opened for user root by (uid=1000)
+Mar 26 10:08:25 server1 sshd[12350]: Failed password for invalid user test from 192.168.1.50 port 60222 ssh2
+Mar 26 10:08:27 server1 sshd[12351]: Failed password for invalid user test from 192.168.1.50 port 60223 ssh2
+Mar 26 10:08:30 server1 sshd[12352]: Failed password for invalid user test from 192.168.1.50 port 60224 ssh2
+Mar 26 10:08:33 server1 sshd[12353]: Failed password for invalid user test from 192.168.1.50 port 60225 ssh2
+Mar 26 10:08:36 server1 sshd[12354]: Failed password for invalid user test from 192.168.1.50 port 60226 ssh2
+Mar 26 10:15:01 server1 CRON[12400]: (root) CMD (run-parts /etc/cron.hourly)
+Mar 26 10:20:11 server1 sshd[12420]: Invalid user guest from 203.0.113.10 port 50122

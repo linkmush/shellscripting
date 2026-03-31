@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "failed_total": 8,
+    "unique_failed_ips": 3
+  },
+  "anomalies": [
+    {
+      "ip": "192.168.1.50",
+      "count": 5
+    }
+  ]
+}
