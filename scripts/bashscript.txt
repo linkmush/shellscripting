@@ -1,0 +1,32 @@
+logfile="security_log.txt" // det är filen
+
+log() { // funktion för att logga meddelanden
+    echo "$(date) - $1" | tee -a $logfile  // Skriver ut tid + meddelande och sparar i loggfil
+}
+
+check_file() { // funktion som kontrollerar filen
+    local file=$1     // Tar emot första argumentet och sparar som lokal variabel
+    if [ -f "$file" ]; then     // kontrollerar om den finns 
+        log "Filen '$file' finns." // om filen finns skriv ut det i loggen
+        ls -l "$file" | tee -a $logfile // ls - listar filer, tee - visar det i terminalen och sparar samtidigt
+    else // om filen inte existerar
+        log "VARNING: Filen '$file' saknas." // skriiv ut att den inte existerar, varnar.
+    fi // slut på if satsen
+}
+
+check_user() { // funktion som kontrollerar användaren
+    local user=$1 // tar emot första argumentet som användarnamn
+    if id "$user" &>/dev/null; then  // if sats som kontrollerar om användaren finns
+        log "Användaren '$user' finns." // om den finns skriv ut det i loggen 
+    else // om den inte finns 
+        log "VARNING: Användaren '$user' saknas." // om den finns skriv ut det i loggen, varning.
+    fi // slut på if satsen
+}
+
+read -p "Ange fil att kontrollera: " file_input  // tar emot användar input
+check_file "$file_input" // anropar funktionen med input check_file
+
+read -p "Ange användarnamn att kontrollera: " user_input // tar emot användar input
+check_user "$user_input" // anropar funktionen check_user
+
+log "Kontroller slutförda." // loggar att kontroller är slutförda 

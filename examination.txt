@@ -1,0 +1,177 @@
+1 - Betygsgrundande Examination
+Examination för kursen Shellscripting och Automation med Python 
+Titel: 
+Automationsdriven Säkerhetsförbättring av Företagsinfrastruktur genom Bash, PowerShell och Python
+
+Examinationsform: 
+Teoretisk rapport + tre skript (Bash, PowerShell, Python) baserade på ett realistiskt scenario
+
+Omfattning: 
+Rapport: 10–14 sidor
+Kod: 1 Bash-skript, 1 PowerShell-skript, 1 Python-skript
+Bilagor: Loggutdrag, körresultat, diagram, skärmdumpar där relevant
+Språk: 
+Svenska eller Engelska
+
+Referenshantering: 
+Harvard-systemet
+
+Scenario 
+Efter att företaget genomgått en större modernisering av sin IT-infrastruktur har ledningen identifierat ett kritiskt behov:
+
+Organisationens säkerhetsarbete är för långsamt och för manuellt.
+
+Du har därför tilldelats rollen som Automationsingenjör inom IT-säkerhet, med uppdrag att:
+
+1. Kartlägga säkerhetsrelaterade manuella rutiner 
+(t.ex. logginsamling, patchkontroll, kontohantering, policykontroller)
+
+2. Utforma och implementera automatiserade lösningar 
+genom Bash, PowerShell och Python, med fokus på:
+
+säkerhetskontroller
+härdningsmoment
+logginsamling och analys
+detektion av risker
+kontinuerlig övervakning
+automatisering av rutiner som minskar mänskliga fel
+användning av AI som stöd för utvecklingsprocessen
+3. Producera en helhetsstrategi för kommandobaserad utveckling i organisationen 
+där du argumenterar för tekniska val, säkerhetsrisker och nyttan av automation.
+
+Ledningen har satt följande krav:
+
+Alla skript ska byggas enligt best practice för respektive teknik.
+Skripten ska vara modulära, robusta och dokumenterade.
+Automationen ska stödja etablerade ramverk: NIST, CIS Controls och NIS2.
+Du ska analysera hur kommandobaserad utveckling påverkar säkerhet, arbetsflöden och risker i verksamheten.
+Förslagen ska vara skalbara och kunna införas i både små och stora miljöer.
+Uppgiftsbeskrivning 
+Del 1 – Teoretisk rapport 
+Rapporten ska omfatta följande huvudområden:
+
+1. Automationens roll i modern IT-säkerhet 
+Definiera och förklara varför kommandobaserad utveckling (Bash, PowerShell, Python) är avgörande inom IT-säkerhet.
+Beskriv hur automation minskar risker, ökar spårbarhet och förbättrar säkerhetsnivån.
+Använd yrkesterminologi och koppla till aktuella standarder.
+Analysera hur automation stöder NIS2, NIST och CIS Controls.
+VG-nivå: Tydlig analys av hur automation påverkar ett företags infrastruktur och dagliga arbete.
+
+2. Teknisk jämförelse mellan Bash, PowerShell och Python 
+För varje språk:
+
+Beskriv språkets arkitektur, styrkor, användningsområden och säkerhetsutmaningar.
+Differentiera funktionerna: pipelines, moduler, API-anrop, fjärradministration, hantering av sekretess, autentisering, logghantering osv.
+Redogör när man ska välja vilket språk och varför.
+VG-nivå: Djup analys av säkerhetsaspekter, t.ex. credential handling, logging, privilege escalation-risken.
+
+3. Automatisering av säkerhetsrutiner 
+Identifiera minst tre kritiska säkerhetsmoment som kan automatiseras, t.ex.:
+
+Logginsamling och analys
+Kontroll av systemkonfiguration och härdningsnivå
+Sårbarhetsanalys och patchstatus
+Konto- och behörighetskontroller
+Backuplogik
+Detektion av avvikelser (t.ex. misstänkta loggar eller konfigurationsförändringar)
+För varje moment ska du:
+
+Beskriva den manuella processen
+Analysera riskerna
+Motivera en automatiserad lösning
+Redogöra för vilket språk som lämpar sig bäst
+Förklara hur detta förbättrar organisationens säkerhetsarbete
+VG-nivå: Visa genomgående säkerhetstänk — t.ex. input sanitation, least privilege, felhantering, loggning, audit trails.
+
+4. Säkerhetsrisker i kommandobaserad utveckling 
+Redogör för säkerhetsriskerna med automation, exempelvis:
+
+felaktig exekvering
+obehöriga ändringar
+credential exposure
+command injection
+bristande logghantering
+fel i script som skapar driftstörningar
+Beskriv hur dessa risker ska hanteras genom:
+
+rollbaserad åtkomst
+kodgranskning
+versionshantering
+signering av skript
+säkra hemligheter
+övervakning
+kontroll av exekverings-policy
+VG-nivå: Försvara riskerna i relation till företagets infrastruktur och dagliga arbete.
+
+5. Förslag till framtida förbättringar och automationsstrategi 
+Du ska föreslå och motivera:
+
+hur företaget kan skala automationen
+införande av CI/CD för skript
+implementering av AI som stöd vid utveckling och felsökning
+hur automation stöder incidentrespons
+hur automation möjliggör snabbare regelefterlevnad
+VG-nivå: Innovativa förslag med tydlig koppling till verksamhetsrisker, driftstabilitet och säkerhetsarkitektur.
+
+Del 2 – Praktisk leverans: Tre skript 
+Du ska utveckla tre separata skript, ett i varje språk:
+
+A) Bash-skript (Linux-miljö) 
+Skriptet ska:
+
+genomföra minst en säkerhetskontroll, exempelvis:
+kontroll av filrättigheter
+analys av systemloggar
+upptäckt av ovanlig nätverkstrafik
+kontroll av installerade paket och uppdateringsstatus
+innehålla strukturerad felhantering
+logga output i en fil
+följa best practice för shellscript
+B) PowerShell-skript (Windows-miljö) 
+Skriptet ska:
+
+automatisera minst en säkerhetsrelaterad funktion, exempelvis:
+kontroll av privilegierade konton
+analys av Event Viewer
+härdning av settings (t.ex. firewall, audit policies)
+uppdateringsstatus
+inkludera validering, felhantering, beskrivande loggning
+använda moduler eller cmdlets strukturerat
+C) Python-skript (plattformoberoende) 
+Skriptet ska:
+
+bearbeta säkerhetsdata, exempelvis:
+processlistor
+loggfiler
+nätverksdata
+API-anrop mot en central säkerhetsplattform
+producera en analys, t.ex.:
+identifiering av anomalier
+sammanställning av risker
+generering av en rapport
+följa strukturerad kodstandard med funktioner och tydlig dokumentation
+Del 3 – Bilagor 
+Du ska bifoga:
+
+körresultat från dina skript
+loggar eller utskrifter
+diagram / tabeller om relevant
+teknisk dokumentation
+källkod i läsbar form
+Formatkrav och inlämning 
+Rapport: 10–14 sidor
+Filformat: PDF
+Skript: Tre separata filer (.sh, .ps1, .py)
+Referenser: Harvard
+Deadline: Enligt lärplattformen
+Sammanfattning av Examinationen 
+Denna examination bygger vidare på tidigare kursers säkerhetsfokus men tar nästa steg: automation som verktyg för säkerhetsutveckling.
+
+Genom att kombinera Bash, PowerShell och Python med ett säkerhetsdrivet mindset ska du:
+
+analysera risker
+föreslå förbättringar
+implementera automatisering
+motivera tekniska beslut
+visa hur kommandobaserad utveckling stärker organisationens säkerhetsarbete
+Examinationen simulerar en verklig arbetssituation där en IT-säkerhetsutvecklare ansvarar för att effektivisera, säkra och automatisera kritiska processer i ett företag.:
