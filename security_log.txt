@@ -1,7 +1,0 @@
-Tue, Apr  7, 2026 10:09:12 AM - VARNING: Filen 'lektionsscriptbash.sh' saknas.
-Tue, Apr  7, 2026 10:10:05 AM - VARNING: Användaren 'desktop-kf7t3np' saknas.
-Tue, Apr  7, 2026 10:10:05 AM - Kontroller slutförda.
-Tue, Apr  7, 2026 10:10:57 AM - Filen 'security_log.txt' finns.
--rw-r--r-- 1 MSI 197609 277 Apr  7 10:10 security_log.txt
-Tue, Apr  7, 2026 10:11:02 AM - VARNING: Användaren 'Oskar' saknas.
-Tue, Apr  7, 2026 10:11:02 AM - Kontroller slutförda.
